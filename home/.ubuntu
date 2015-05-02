@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Update and install basic tools
+sudo apt-get update && sudo apt-get upgrade
+sudo apt-get install git vim htop tree ncurses-term python-pip3
+
+# Install Sublime
+wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3065_amd64.deb
+sudo dpkg -i *.deb
+
+#
+# :%s/\/Volumes\/Data\/Wolkie\/Persoonlik\/Identity\/keys/\~\/\.ssh/g
